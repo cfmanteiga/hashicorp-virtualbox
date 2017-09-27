@@ -32,3 +32,5 @@ RUN export VIRTUALBOX_VERSION=latest && \
       else yum install -y VirtualBox-5.1-${VIRTUALBOX_VERSION} ; \
     fi && \
     yum clean all && rm -rf /var/cache/yum/* && rm -rf /tmp/*
+
+RUN vagrant plugin install vagrant-vbguest
